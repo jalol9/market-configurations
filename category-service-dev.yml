@@ -6,4 +6,12 @@ server:
 spring:
   application:
     name: category-service
-
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: 'jdbc:postgresql://localhost:5432/postgres'
+    username: postgres
+    password: jshkm
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: true
