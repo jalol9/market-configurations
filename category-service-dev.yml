@@ -1,0 +1,9 @@
+server:
+  port: 8001
+  servlet:
+    context-path: /category
+
+spring:
+  application:
+    name: category-service
+
