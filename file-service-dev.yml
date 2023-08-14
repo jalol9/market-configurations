@@ -20,3 +20,13 @@ spring:
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 200MB #Maximum file size
+      file-size-threshold: 2KB #Threshold of File Writing to Disk
+      max-request-size: 215MB #Maximum request size
+    ## Parameters required for file storage
+    # All files uploaded through REST APIs will be stored in this directory
+upload:
+  dir: './my-file/uploads'
