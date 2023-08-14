@@ -1,0 +1,22 @@
+server:
+  port: 8002
+  servlet:
+    context-path: /file
+
+spring:
+  application:
+    name: file-service
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: 'jdbc:postgresql://localhost:5432/postgres'
+    username: postgres
+    password: jshkm
+  jpa:
+    hibernate:
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyComponentPathImpl
+      ddl-auto: update
+    open-in-view: true
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
