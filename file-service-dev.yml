@@ -30,3 +30,9 @@ spring:
     # All files uploaded through REST APIs will be stored in this directory
 upload:
   dir: './my-file/uploads'
+
+application:
+  instanse: 1
+
+file:
+  key: file key dev
