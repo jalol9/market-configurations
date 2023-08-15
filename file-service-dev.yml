@@ -32,7 +32,7 @@ upload:
   dir: './my-file/uploads'
 
 application:
-  instanse: 1
+  instance: 1
 
 file:
   key: file key dev
