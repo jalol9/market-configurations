@@ -20,3 +20,9 @@ spring:
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
+
+application:
+  instanse: 1
+
+category:
+  key: category-key-dev
